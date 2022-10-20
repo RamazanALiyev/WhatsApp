@@ -1,21 +1,26 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-html,body{
+
+html,
+body {
     height: 100%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-a{
+
+a {
     list-style: none;
     text-decoration: none;
 }
-.chat{
+
+.chat {
     height: 100%;
     display: flex;
 }
-.chat .sidebar{
+
+.chat .sidebar {
     height: 100%;
     width: 400px;
     min-width: 400px;
@@ -23,38 +28,45 @@ a{
     display: flex;
     flex-direction: column;
 }
-.chat .sidebar .main{
+
+.chat .sidebar .main {
     height: 60px;
     background-color: rgb(224, 224, 224);
     display: flex;
     justify-content: space-between;
 }
-.chat .sidebar .main .ai{
+
+.chat .sidebar .main .ai {
     height: 60px;
     font-size: 18px;
     margin: 13px;
 }
-.chat .sidebar .main .ai i{
+
+.chat .sidebar .main .ai i {
     margin: 10px;
     color: rgb(116, 115, 115);
 }
-.chat .sidebar .main .myname{
+
+.chat .sidebar .main .myname {
     width: 40px;
     height: 40px;
     border-radius: 40px;
     margin: 10px;
 }
-.chat .sidebar .search{
+
+.chat .sidebar .search {
     height: 60px;
     background-color: rgb(236, 236, 236);
 }
-.chat .sidebar .search i{
+
+.chat .sidebar .search i {
     position: absolute;
     color: gray;
     margin: 23px;
     margin-left: 40px;
 }
-.chat .sidebar .search input{
+
+.chat .sidebar .search input {
     width: 380px;
     height: 40px;
     border-radius: 40px;
@@ -62,16 +74,19 @@ a{
     text-align: center;
     border: 1px solid transparent;
 }
-.chat .sidebar .search input:focus{
+
+.chat .sidebar .search input:focus {
     outline: none;
 }
-.chat .sidebar .contacts{
+
+.chat .sidebar .contacts {
     overflow: auto;
     overflow-x: hidden;
     flex: 1;
 
 }
-.chat .contacts .archive{
+
+.chat .contacts .archive {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -79,102 +94,124 @@ a{
     height: 50px;
     background-color: rgb(255, 255, 255);
 }
-.chat .contacts .archive .d1{
+
+.chat .contacts .archive .d1 {
     color: rgb(15, 125, 161);
     margin-left: 30px;
 }
-.chat .contacts .archive .d2{
+
+.chat .contacts .archive .d2 {
     flex: 1;
     margin-left: 30px;
 }
-.chat .contacts .archive .d2 a{
+
+.chat .contacts .archive .d2 a {
     color: black;
     font-size: 18px;
 }
-.chat .contacts .archive .d3{
+
+.chat .contacts .archive .d3 {
     color: rgb(15, 125, 161);
     margin-right: 30px;
 }
-.chat .contacts ul:hover{
+
+.chat .contacts ul:hover {
     background-color: rgb(224, 224, 224);
     cursor: pointer;
 }
-.chat .contacts ul li{
+
+.chat .contacts ul li {
     display: flex;
     align-content: space-between;
 }
-.chat .contacts ul li img{
+
+.chat .contacts ul li img {
     margin: 10px;
     border-radius: 50px;
 }
-.chat .contacts ul li .contact1{
+
+.chat .contacts ul li .contact1 {
     flex: 1;
     margin: 10px;
 }
-.chat .contacts ul li .contact1 .message{
+
+.chat .contacts ul li .contact1 .message {
     font-size: 14px;
     font-weight: 300;
     margin-top: 5px;
 }
-.chat .contacts ul li .contact2{
+
+.chat .contacts ul li .contact2 {
     margin: 12px;
 }
-.chat .contacts ul li .contact2 .time{
+
+.chat .contacts ul li .contact2 .time {
     font-size: 14px;
     font-weight: 300;
 }
-.chat .contacts ul li .contact2 a i{
+
+.chat .contacts ul li .contact2 a i {
     color: gray;
     margin-left: 5px;
     margin-top: 5px;
 }
-.chat .content{
+
+.chat .content {
     height: 100%;
     flex: 1;
     border-left: 1px solid rgb(201, 201, 201);
 }
-.chat .content .informationperson{
+
+.chat .content .informationperson {
     display: flex;
     background-color: rgb(224, 224, 224);
     height: 60px;
 }
-.chat .content .informationperson img{
+
+.chat .content .informationperson img {
     border-radius: 50px;
     align-self: center;
     margin: 20px;
 }
-.chat .content .informationperson i{
+
+.chat .content .informationperson i {
     color: gray;
 }
-.chat .content .informationperson .infor1{
-    align-self:center
+
+.chat .content .informationperson .infor1 {
+    align-self: center
 }
-.chat .content .informationperson .infor1 .infor12{
+
+.chat .content .informationperson .infor1 .infor12 {
     font-size: 14px;
     font-weight: 300;
 }
-.chat .content .informationperson .infor2{
+
+.chat .content .informationperson .infor2 {
     align-self: center;
     margin-left: 30px;
     font-size: 18px;
 }
-.chat .content .informationperson .infor3{
+
+.chat .content .informationperson .infor3 {
     align-self: center;
     margin-left: 20px;
     font-size: 18px;
 }
-.chat .content .messagecontact{
-    height: 537px;
+
+.chat .content .messagecontact {
+    height: calc(100vh - 120px);
     flex: 1;
     background-image: url(https://i.pinimg.com/474x/3f/18/b6/3f18b6309f28824eccaa8fcc5aa4f68f.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position:center;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
-.chat .content .messagecontact .message1{
+
+.chat .content .messagecontact .message1 {
     width: 600px;
     height: 30px;
     background-color: rgb(198, 255, 250);
@@ -182,12 +219,14 @@ a{
     align-self: center;
     margin-bottom: 10px;
 }
-.chat .content .messagecontact .message1 p{
+
+.chat .content .messagecontact .message1 p {
     font-size: 14px;
     text-align: center;
     line-height: 28px;
 }
-.chat .content .messagecontact .message2{
+
+.chat .content .messagecontact .message2 {
     width: 70px;
     height: 30px;
     background-color: rgb(198, 255, 250);
@@ -195,12 +234,14 @@ a{
     align-self: center;
     margin-bottom: 10px;
 }
-.chat .content .messagecontact .message2 p{
+
+.chat .content .messagecontact .message2 p {
     font-size: 14px;
     text-align: center;
     line-height: 28px;
 }
-.chat .content .messagecontact .message3{
+
+.chat .content .messagecontact .message3 {
     width: 550px;
     height: 75px;
     background-color: rgb(230, 225, 225);
@@ -208,13 +249,16 @@ a{
     margin-left: 50px;
     margin-bottom: 5px;
 }
-.chat .content .messagecontact .message3 .message4 a{
+
+.chat .content .messagecontact .message3 .message4 a {
     margin: 5px;
 }
-.chat .content .messagecontact .message3 p{
+
+.chat .content .messagecontact .message3 p {
     margin: 5px 10px 5px 10px;
 }
-.chat .content .messagecontact .messaga5{
+
+.chat .content .messagecontact .messaga5 {
     background-color: rgb(230, 225, 225);
     width: 550px;
     height: 55px;
@@ -222,10 +266,12 @@ a{
     margin-left: 50px;
     margin-bottom: 5px;
 }
-.chat .content .messagecontact .messaga5 p{
+
+.chat .content .messagecontact .messaga5 p {
     margin: 5px 10px 5px 10px;
 }
-.chat .content .messagecontact .messaga6{
+
+.chat .content .messagecontact .messaga6 {
     background-color: rgb(230, 225, 225);
     width: 550px;
     height: 55px;
@@ -233,16 +279,19 @@ a{
     margin-left: 50px;
     margin-bottom: 5px;
 }
-.chat .content .messagecontact .messaga6 p{
+
+.chat .content .messagecontact .messaga6 p {
     margin: 5px 10px 5px 10px;
 }
-.chat .content .messagecontact p{
+
+.chat .content .messagecontact p {
     font-size: 14px;
     font-weight: 300;
     color: rgb(27, 27, 27);
 
 }
-.chat .content .messageshare{
+
+.chat .content .messageshare {
     height: 60px;
     background-color: rgb(224, 224, 224);
     text-align: center;
@@ -251,7 +300,8 @@ a{
     color: rgb(48, 48, 48);
     line-height: 60px;
 }
-.chat .content .messageshare p a{
+
+.chat .content .messageshare p a {
     color: rgb(0, 191, 255);
     font-weight: 500;
 }
@@ -259,7 +309,7 @@ a{
 
 
 
-.fixed-wp a{
+.fixed-wp a {
     position: fixed;
     bottom: 80px;
     right: 50px;
